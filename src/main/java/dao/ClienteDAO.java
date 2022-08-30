@@ -146,8 +146,33 @@ public class ClienteDAO extends BaseDAO {
 	}
 
 	public static void main(String[] args) {
-		//Cliente cliente = new Cliente(3L,"Aline", "Dias", false, null);
+		System.out.println("\nLista de Clientes");
+		System.out.println(ClienteDAO.selectClientes());
+
+		System.out.println("\nCliente pelo id");
+		System.out.println(ClienteDAO.selectClienteById(1L));
+
+		System.out.println("\nClientes pelo nome");
+		System.out.println(ClienteDAO.selectClientesByName("a"));
+
+		System.out.println("\nCliente pela situação");
+		System.out.println(ClienteDAO.selectClientesBySituacao(true));
+
+		System.out.println("\nCriando um Clente");
+		Cliente cliente = new Cliente(3L,"Aline", "Dias", false, null);
+		System.out.println(ClienteDAO.insertCliente(cliente));
+		System.out.println("\nCliente INSERIDO na base de dados: " + ClienteDAO.selectClienteById(3L));
+
+		System.out.println("\nAlterando um cliente (o criado recentemente)");
+		cliente = selectClienteById(3L);
+		cliente.setNome("Aline Marisa");
+		cliente.setSobrenome("Vaz");
+		System.out.println(ClienteDAO.updateCliente(cliente));
+		System.out.println("\nCliente ALTERADO na base de dados: " + ClienteDAO.selectClienteById(3L));
+
+		System.out.println("\nDeletando um cliente (o criado recentemente)");
 		System.out.println(softDeleteCliente(3, false));
+		System.out.println("\nCliente EXCLUÍDO na base de dados: " + ClienteDAO.selectClienteById(3L));
 	}
 
 }
