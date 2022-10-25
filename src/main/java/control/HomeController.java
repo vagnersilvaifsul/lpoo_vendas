@@ -11,13 +11,15 @@ public class HomeController {
 		int opcao = 0;
 		do {
 			System.out.print("\n-------  Home -------");
-			System.out.print(		
-				"\n1. Vender" +
-				"\n2. Manter Produtos" +
-				"\n3. Manter Clientes" +
-				"\n4. Manter Itens" +
-				"\n5. Manter Pedidos" +
-				"\nOpção (Zero p/sair): ");
+			System.out.print(
+				"""
+
+					1. Vender
+					2. Manter Produtos
+					3. Manter Clientes
+					4. Manter Itens
+					5. Manter Pedidos
+					Opção (Zero p/sair):\s""");
 			opcao = input.nextInt();
 			input.nextLine();
 			switch(opcao) {

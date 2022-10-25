@@ -4,8 +4,8 @@ import model.Item;
 import model.Pedido;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class PedidoDAO extends BaseDAO {
@@ -21,7 +21,7 @@ public class PedidoDAO extends BaseDAO {
         (
         		Connection conn = getConnection();
         		PreparedStatement pstmt_pedidos = conn.prepareStatement(sql_insert_pedidos, Statement.RETURN_GENERATED_KEYS);
-        		PreparedStatement pstmt_itens = conn.prepareStatement(sql_insert_itens);
+        		PreparedStatement pstmt_itens = conn.prepareStatement(sql_insert_itens)
 		)
         {
             /*
@@ -30,8 +30,8 @@ public class PedidoDAO extends BaseDAO {
             conn.setAutoCommit(false);
             pstmt_pedidos.setString(1, pedido.getFormaPagamento());
             pstmt_pedidos.setString(2, pedido.getEstado());
-            pstmt_pedidos.setDate(3, new Date(new java.util.Date().getTime()));
-            pstmt_pedidos.setDate(4, new Date(new java.util.Date().getTime()));
+            pstmt_pedidos.setDate(3, java.sql.Date.valueOf(LocalDate.now()));
+            pstmt_pedidos.setDate(4, java.sql.Date.valueOf(LocalDate.now()));
             pstmt_pedidos.setLong(5, pedido.getCliente().getId());
             pstmt_pedidos.setDouble(6, pedido.getTotalPedido());
             pstmt_pedidos.setBoolean(7, true);
@@ -73,7 +73,7 @@ public class PedidoDAO extends BaseDAO {
 		try
 		(
 			Connection conn = getConnection();
-			PreparedStatement pstmt = conn.prepareStatement(sql);
+			PreparedStatement pstmt = conn.prepareStatement(sql)
 		)
 		{
 			pstmt.setLong(1, id);	
@@ -97,19 +97,13 @@ public class PedidoDAO extends BaseDAO {
 		p.setId(rs.getLong("id"));
 		p.setFormaPagamento(rs.getString("pagamento"));
 		p.setEstado(rs.getString("estado"));
-		p.setDataCriacao(dateToCalendar(rs.getDate("data_criacao")));
-		p.setDataModificacao(dateToCalendar(rs.getDate("data_modificacao")));
+		p.setDataCriacao(rs.getDate("data_criacao").toLocalDate());
+		p.setDataModificacao(rs.getDate("data_modificacao").toLocalDate());
 		p.setTotalPedido(rs.getDouble("total_pedido"));
 		p.setSituacao(rs.getBoolean("situacao"));
 		p.setCliente(ClienteDAO.selectClienteById(rs.getLong("id_cliente")));
 		p.setItens(ItemDAO.selectItensByPedido(p.getId()));
 
 		return p;
-	}
-	
-	private static Calendar dateToCalendar(Date date) {
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(date);
-		return cal;
 	}
 }

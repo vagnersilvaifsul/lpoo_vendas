@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f21da7b-a7d7-431d-80b8-939d744979f9" name="Changes" comment="chore: migration eclipse to intellij">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="9f21da7b-a7d7-431d-80b8-939d744979f9" name="Changes" comment="test: test cliente">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ClienteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,31 +30,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/vagner/intellij_projects/vendas/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vagner/intellij_projects/vendas&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClienteDAO">
+  <component name="RunManager" selected="Application.HomeController">
     <configuration name="BaseDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.BaseDAO" />
       <module name="vendas" />
@@ -94,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClienteDAO" />
         <item itemvalue="Application.HomeController" />
+        <item itemvalue="Application.ClienteDAO" />
         <item itemvalue="Application.BaseDAO" />
       </list>
     </recent_temporary>
@@ -108,7 +110,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661868207907</updated>
-      <workItem from="1661868211590" duration="2092000" />
+      <workItem from="1661868211590" duration="2785000" />
+      <workItem from="1661964867205" duration="85000" />
+      <workItem from="1662032272716" duration="927000" />
+      <workItem from="1662033445470" duration="5871000" />
+      <workItem from="1662644172802" duration="208000" />
+      <workItem from="1664909829370" duration="1579000" />
+      <workItem from="1666655358508" duration="883000" />
+      <workItem from="1666656482259" duration="138000" />
     </task>
     <task id="LOCAL-00001" summary="chore: migration eclipse to intellij">
       <created>1661868945329</created>
@@ -117,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661868945329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test: test cliente">
+      <created>1661870565779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661870565779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: migration eclipse to intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: migration eclipse to intellij" />
+    <MESSAGE value="test: test cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: test cliente" />
   </component>
 </project>

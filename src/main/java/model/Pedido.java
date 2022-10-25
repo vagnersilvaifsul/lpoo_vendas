@@ -1,17 +1,17 @@
 package model;
 
 import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class Pedido {
 	private Long id;
 	private String formaPagamento;
 	private String estado;
-	private Calendar dataCriacao;
-	private Calendar dataModificacao;
+	private LocalDate dataCriacao;
+	private LocalDate dataModificacao;
 	private Double totalPedido;
 	private Boolean situacao;
 	private Cliente cliente;
@@ -21,7 +21,7 @@ public class Pedido {
 		super();
 	}
 
-	public Pedido(Long id, String formaPagamento, String estado, Calendar dataCriacao, Calendar dataModificacao,
+	public Pedido(Long id, String formaPagamento, String estado, LocalDate dataCriacao, LocalDate dataModificacao,
 			Double totalPedido, Boolean situacao, Cliente cliente, List<Item> itens) {
 		super();
 		this.id = id;
@@ -35,7 +35,7 @@ public class Pedido {
 		this.itens = itens;
 	}
 
-	public Pedido(Long id, String formaPagamento, String estado, Calendar dataCriacao, Calendar dataModificacao,
+	public Pedido(Long id, String formaPagamento, String estado, LocalDate dataCriacao, LocalDate dataModificacao,
 			Double totalPedido, Boolean situacao, Cliente cliente) {
 		super();
 		this.id = id;
@@ -77,19 +77,19 @@ public class Pedido {
 		this.estado = estado;
 	}
 
-	public Calendar getDataCriacao() {
+	public LocalDate getDataCriacao() {
 		return dataCriacao;
 	}
 
-	public void setDataCriacao(Calendar dataCriacao) {
+	public void setDataCriacao(LocalDate dataCriacao) {
 		this.dataCriacao = dataCriacao;
 	}
 
-	public Calendar getDataModificacao() {
+	public LocalDate getDataModificacao() {
 		return dataModificacao;
 	}
 
-	public void setDataModificacao(Calendar dataModificacao) {
+	public void setDataModificacao(LocalDate dataModificacao) {
 		this.dataModificacao = dataModificacao;
 	}
 
@@ -130,21 +130,12 @@ public class Pedido {
 		return "\n*******  Pedido Número = " + id + " ******" +
 				"\nForma de Pagamento= " + formaPagamento + 
 				"\nEstado= " + estado + 
-				"\nData da criação= " + calendarToString(dataCriacao) + 
-				"\nData da modificacao= " + calendarToString(dataModificacao) + 
+				"\nData da criação= " + DateTimeFormatter.ofPattern("dd/MM/yyyy").format(dataCriacao) +
+				"\nData da modificacao= " + DateTimeFormatter.ofPattern("dd/MM/yyyy").format(dataModificacao) +
 				"\nTotal do Pedido= " + NumberFormat.getCurrencyInstance().format(totalPedido) + 
 				"\nsituacao= " + situacao + 
 				"\nCliente=" + cliente + 
 				"\nItens=" + itens + "\n";
-	}
-	
-	//métodos utilitários para conversão de Calendar para String formatada
-	private static String calendarToString(Calendar data) {
-		if(data != null) {
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
-			return sdf.format(data.getTime());
-		}
-		return "00/00/0000";
 	}
 	
 }

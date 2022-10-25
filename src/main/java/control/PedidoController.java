@@ -17,14 +17,15 @@ public class PedidoController {
         do{
             System.out.println("\n\n******** Pedidos ********");
             System.out.print(
-                    "1. Check-out do pedido" +
-                    "\n2. Enviar Pedido" +
-                    "\n3. Excluir Pedido" +
-                    "\n4. Lista todos os pedidos inativos" +
-                    "\n5. Lista todos os pedidos ativos" +
-                    "\n6. Lista todos os pedidos por período" +
-                    "\n7. Listar pedidos de um cliente" +
-                    "\nDigite a opção (0 para sair): "
+                """
+                    1. Check-out do pedido
+                    2. Enviar Pedido
+                    3. Excluir Pedido
+                    4. Lista todos os pedidos inativos
+                    5. Lista todos os pedidos ativos
+                    6. Lista todos os pedidos por período
+                    7. Listar pedidos de um cliente
+                    Digite a opção (0 para sair):\s"""
             );
             opcao = input.nextInt();
             input.nextLine();
@@ -33,6 +34,7 @@ public class PedidoController {
                     System.out.println("em desenvolvimento " + opcao);
                     break;
                 case 2:
+                    System.out.println("em desenvolvimento " + opcao);
                     System.out.println("em desenvolvimento " + opcao);
                     break;
                 case 3:
