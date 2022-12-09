@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f21da7b-a7d7-431d-80b8-939d744979f9" name="Changes" comment="test: test cliente">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15a6fd9d-1031-4f35-8209-d05738437a43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/15a6fd9d-1031-4f35-8209-d05738437a43.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
   <component name="RunManager" selected="Application.HomeController">
     <configuration name="BaseDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.BaseDAO" />
-      <module name="vendas" />
+      <module name="lpoo_vendas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -67,7 +65,7 @@
     </configuration>
     <configuration name="ClienteDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.ClienteDAO" />
-      <module name="vendas" />
+      <module name="lpoo_vendas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -80,7 +78,7 @@
     </configuration>
     <configuration name="HomeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="control.HomeController" />
-      <module name="vendas" />
+      <module name="lpoo_vendas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="control.*" />
@@ -118,6 +116,7 @@
       <workItem from="1666695739993" duration="795000" />
       <workItem from="1670435453081" duration="20000" />
       <workItem from="1670590038446" duration="160000" />
+      <workItem from="1670592394067" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="chore: migration eclipse to intellij">
       <created>1661868945329</created>
