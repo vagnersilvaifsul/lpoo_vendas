@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f21da7b-a7d7-431d-80b8-939d744979f9" name="Changes" comment="test: test cliente">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15a6fd9d-1031-4f35-8209-d05738437a43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/15a6fd9d-1031-4f35-8209-d05738437a43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PedidoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,8 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -117,7 +114,10 @@
       <workItem from="1662644172802" duration="208000" />
       <workItem from="1664909829370" duration="1579000" />
       <workItem from="1666655358508" duration="883000" />
-      <workItem from="1666656482259" duration="138000" />
+      <workItem from="1666656482259" duration="328000" />
+      <workItem from="1666695739993" duration="795000" />
+      <workItem from="1670435453081" duration="20000" />
+      <workItem from="1670590038446" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="chore: migration eclipse to intellij">
       <created>1661868945329</created>
